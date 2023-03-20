@@ -1,0 +1,27 @@
+///////////////////////////////////////////////////////////////////////////////
+/// PINCHANGE.H
+///
+/// Module servicing the pin change interrupt. This is a single interrupt
+/// that services multiple modules - so it is handled here by the ISR and
+/// dispatched then to the modules that need it.
+///
+/// Dr J A Gow 2022
+///
+//////////////////////////////////////////////////////////////////////////////
+
+#ifndef PINCHANGE_H_
+#define PINCHANGE_H_
+
+
+///////////////////////////////////////////////////////////////////////////////
+/// PINInitialize
+///
+/// This is called once at system startup. This function enables the pin change
+/// functionality and enables the interrupt associated with it
+///
+///////////////////////////////////////////////////////////////////////////////
+
+void PINInitialize(void);
+
+
+#endif

@@ -1,0 +1,27 @@
+///////////////////////////////////////////////////////////////////////////////
+/// SSEGDRIVER.H
+///
+/// This is the driver for the seven segment display. It is a shell - you
+/// should populate with your own code
+///
+///////////////////////////////////////////////////////////////////////////////
+
+#ifndef SSEGDRIVER_H_
+#define SSEGDRIVER_H_
+
+
+///////////////////////////////////////////////////////////////////////////////
+/// SSEGInitializeDriver
+///
+/// This is called once at system startup. It initializes the seven segment
+/// display driver.
+/// This module is the only place where hardware related to the seven segment
+/// display is directly accessed, so here is where we set the IO parameters.
+///
+///////////////////////////////////////////////////////////////////////////////
+
+void SSEGInitializeDriver(void);
+
+
+
+#endif

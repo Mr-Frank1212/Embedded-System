@@ -1,0 +1,29 @@
+///////////////////////////////////////////////////////////////////////////////
+/// KEYPAD.H
+///
+/// Keyboard module
+///
+/// Dr J A Gow 2022
+///
+//////////////////////////////////////////////////////////////////////////////
+
+#ifndef KEYPAD_H_
+#define KEYPAD_H_
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+/// KEYInitializeKeypad
+///
+/// This is called once at system startup. It initializes the keypad driver.
+/// This module is the only place where hardware related to the keypad is
+/// directly accessed, so here is where we set the IO parameters. We then
+/// register the message handler so it picks up the messages posted from
+/// the control application
+///
+///////////////////////////////////////////////////////////////////////////////
+
+void KEYInitializeKeypad(void);
+
+
+#endif
